@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Profil Mahasiswa - Universitas Pelita Bangsa</h1>
+        <p>Contoh Penerapan HTML</p>
+    </header>
+
+    <!-- NAVIGASI -->
+    <nav>
+        <a href="#profil">Profil</a> |
+        <a href="#data">Data Mahasiswa</a> |
+        <a href="#kontak">Form Kontak</a> |
+        <a href="#media">Multimedia</a>
+    </nav>
+
+    <main>
+
+        <!-- PROFIL -->
+        <section id="profil">
+            <h2>Profil Mahasiswa</h2>
+
+            <article>
+                <h3>Tentang Mahasiswa</h3>
+                <p> Halo, saya Fakhri Afrian, NIM: 312410074, saya mahasiswa Program Studi Teknik Informatika. Halaman ini dibuat sebagai proyek pembelajaran Pemrograman Web yang menampilkan profil mahasiswa, data akademik, serta penerapan berbagai elemen HTML seperti tabel, form, dan multimedia.
+                </p>
+
+            </article>
+        </section>
+
+
+        <!-- TABEL DATA MAHASISWA -->
+        <section id="data">
+            <h2>Data Mahasiswa</h2>
+
+            <table border="1">
+
+                <caption>
+                    Daftar Data Mahasiswa
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th colspan="2">Identitas</th>
+                        <th rowspan="2">Program Studi</th>
+                        <th rowspan="2">Nilai</th>
+                    </tr>
+
+                    <tr>
+                        <th>NIM</th>
+                        <th>Nama</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>312410001</td>
+                        <td>Andi</td>
+                        <td>Teknik Informatika</td>
+                        <td>85</td>
+                    </tr>
+
+                    <tr>
+                        <td>312410002</td>
+                        <td>Budi</td>
+                        <td>Teknik Informatika</td>
+                        <td>90</td>
+                    </tr>
+
+                    <tr>
+                        <td>312410003</td>
+                        <td>Citra</td>
+                        <td>Sistem Informasi</td>
+                        <td>88</td>
+                    </tr>
+
+                    <tr>
+                        <td>312410004</td>
+                        <td>Dina</td>
+                        <td>Teknik Informatika</td>
+                        <td>92</td>
+                    </tr>
+                    <tr>
+                        <td>312410005</td>
+                        <td>Dodi</td>
+                        <td>Teknik Informatika</td>
+                        <td>83</td>
+                    </tr>
+                    <tr>
+                        <td>312410006</td>
+                        <td>Silfi</td>
+                        <td>Teknik Informatika</td>
+                        <td>78</td>
+                    </tr>
+                    <tr>
+                        <td>312410007</td>
+                        <td>Fathi</td>
+                        <td>Teknik Informatika</td>
+                        <td>87</td>
+                    </tr>
+                    <tr>
+                        <td>312410008</td>
+                        <td>Rido</td>
+                        <td>Teknik Informatika</td>
+                        <td>79</td>
+                    </tr>
+                    <tr>
+                        <td>312410009</td>
+                        <td>Putra</td>
+                        <td>Teknik Informatika</td>
+                        <td>84</td>
+                    </tr>
+                    <tr>
+                        <td>312410010</td>
+                        <td>Ainul</td>
+                        <td>Teknik Informatika</td>
+                        <td>93</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </section>
+
+
+        <!-- FORM KONTAK -->
+        <section id="kontak">
+
+            <h2>Form Kontak Mahasiswa</h2>
+
+            <form action="#" method="post">
+
+                <!-- NAMA -->
+                <p>
+                    <label for="nama">
+                        Nama:
+                    </label>
+                    <br>
+
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        minlength="3"
+                        maxlength="30"
+                        required
+                    >
+                </p>
+
+
+                <!-- EMAIL -->
+                <p>
+                    <label for="email">
+                        Email:
+                    </label>
+                    <br>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+                </p>
+
+
+                <!-- PASSWORD -->
+                <p>
+                    <label for="password">
+                        Password:
+                    </label>
+                    <br>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        minlength="6"
+                        required
+                    >
+                </p>
+
+
+                <!-- UMUR -->
+                <p>
+                    <label for="umur">
+                        Umur:
+                    </label>
+                    <br>
+
+                    <input
+                        type="number"
+                        id="umur"
+                        name="umur"
+                        min="17"
+                        max="100"
+                        required
+                    >
+                </p>
+
+
+                <!-- TANGGAL LAHIR -->
+                <p>
+                    <label for="tanggal">
+                        Tanggal Lahir:
+                    </label>
+                    <br>
+
+                    <input
+                        type="date"
+                        id="tanggal"
+                        name="tanggal"
+                        required
+                    >
+                </p>
+
+
+                <!-- RADIO BUTTON -->
+                <fieldset>
+
+                    <legend>
+                        Jenis Kelamin
+                    </legend>
+
+                    <input
+                        type="radio"
+                        id="laki"
+                        name="jenis_kelamin"
+                        value="Laki-laki"
+                        required
+                    >
+
+                    <label for="laki">
+                        Laki-laki
+                    </label>
+
+
+                    <input
+                        type="radio"
+                        id="perempuan"
+                        name="jenis_kelamin"
+                        value="Perempuan"
+                    >
+
+                    <label for="perempuan">
+                        Perempuan
+                    </label>
+
+                </fieldset>
+
+
+                <!-- CHECKBOX -->
+                <p>
+
+                    <label>
+                        Hobi:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="coding"
+                        name="hobi"
+                        value="Coding"
+                    >
+
+                    <label for="coding">
+                        Coding
+                    </label>
+
+
+                    <input
+                        type="checkbox"
+                        id="musik"
+                        name="hobi"
+                        value="Musik"
+                    >
+
+                    <label for="musik">
+                        Musik
+                    </label>
+
+
+                    <input
+                        type="checkbox"
+                        id="olahraga"
+                        name="hobi"
+                        value="Olahraga"
+                    >
+
+                    <label for="olahraga">
+                        Olahraga
+                    </label>
+
+                </p>
+
+
+                <!-- SELECT -->
+                <p>
+
+                    <label for="prodi">
+                        Program Studi:
+                    </label>
+
+                    <br>
+
+                    <select
+                        id="prodi"
+                        name="prodi"
+                        required
+                    >
+
+                        <option value="">
+                            -- Pilih Prodi --
+                        </option>
+
+                        <option value="informatika">
+                            Teknik Informatika
+                        </option>
+
+                        <option value="sistem-informasi">
+                            Sistem Informasi
+                        </option>
+
+                        <option value="Teknik-Industri">
+                            Teknik Industri
+                        </option>
+
+                        <option value="Manajemen-Akutansi">
+                            Manajemen Akutansi
+                        </option>
+
+                    </select>
+
+                </p>
+
+
+                <!-- TEXTAREA -->
+                <p>
+
+                    <label for="pesan">
+                        Pesan:
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="pesan"
+                        name="pesan"
+                        rows="5"
+                        cols="40"
+                        minlength="10"
+                        maxlength="1000"
+                        required
+                    ></textarea>
+
+                </p>
+
+
+                <!-- BUTTON -->
+                <button type="submit">
+                    Kirim
+                </button>
+
+                <button type="reset">
+                    Reset
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- MULTIMEDIA -->
+        <section id="media">
+
+            <h2>Multimedia</h2>
+
+
+            <!-- AUDIO -->
+            <article>
+
+                <h3>Audio</h3>
+
+                <p>
+                    Contoh elemen audio:
+                </p>
+
+                <audio controls>
+
+                    <source
+                        src="audio.mp3"
+                        type="audio/mpeg"
+                    >
+
+                    Browser Anda tidak mendukung
+                    elemen audio.
+
+                </audio>
+
+            </article>
+
+
+            <!-- VIDEO -->
+            <article>
+
+                <h3>Video</h3>
+
+                <p>
+                    Contoh elemen video:
+                </p>
+
+                <video
+                    controls
+                    width="500"
+                >
+
+                    <source
+                        src="video.mp4"
+                        type="video/mp4"
+                    >
+
+                    Browser Anda tidak mendukung
+                    elemen video.
+
+                </video>
+
+            </article>
+
+        </section>
+
+
+        <!-- ASIDE -->
+        <aside>
+
+            <h2>Catatan</h2>
+
+            <p>
+                Setiap input sebaiknya memiliki label.
+                Gunakan validasi seperti required, min,
+                max, minlength, dan maxlength.
+            </p>
+
+        </aside>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            &copy; 2026 Profil Mahasiswa -
+            Pemrograman Web
+        </p>
+        <p>
+            Contact System Manager: fakhri789123@gmail.com | +62 812 8920 2437 / +62 856 9150 0460     </p>
+
+    </footer>
+
+</body>
+</html>
