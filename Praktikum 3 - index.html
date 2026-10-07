@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bumi Kost - Cikarang</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <!-- NAVBAR (Logo, Informasi, Harga, About, Contact, Booking, Pembayaran, Register, Login) -->
+    <header id="navbar">
+        <a href="#home" class="logo">Bumi Kost - Cikarang</a>
+        <nav>
+            <a href="#home">Informasi</a>
+            <a href="#harga">Harga &amp; Kamar</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#booking">Booking</a>
+            <a href="#pembayaran">Pembayaran</a>
+        </nav>
+        <div class="akun">
+            <a href="#register" class="tombol tombol-garis">Register</a>
+            <a href="#login" class="tombol">Login</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- 1. HOME -->
+        <section id="home">
+            <h1>Bumi Kost - Cikarang Selatan/ Cikarang Utara</h1>
+
+            <div class="baris">
+                <div class="teks">
+                    <h2>Informasi</h2>
+                    <p>Bumi Kost Cikarang menyediakan kamar putra dan putri dengan Wi-Fi, dapur bersama, dan parkir motor. Pilih kamar, pesan online, lalu bayar tanpa antre.</p>
+                    <a href="#harga" class="tombol">Lihat kamar</a>
+                </div>
+                <div class="gambar">Gambar</div>
+            </div>
+
+            <div class="baris balik">
+                <div class="teks">
+                    <h2>Pengumuman</h2>
+                    <p>Kamar lantai 2 sudah kosong dan siap ditempati mulai bulan depan. Pemesanan dibuka sampai tanggal 25.</p>
+                </div>
+                <div class="gambar">GBR</div>
+            </div>
+
+            <div class="baris">
+                <div class="teks">
+                    <h2>Berita</h2>
+                    <p>Dapur bersama kini memiliki kulkas dan dispenser baru. Jam tamu diperpanjang sampai pukul 21.00.</p>
+                </div>
+                <div class="gambar">Gambar</div>
+            </div>
+        </section>
+
+        <!-- 4. MENU HARGA + KAMAR -->
+        <section id="harga">
+            <h2>Harga &amp; Kamar</h2>
+
+            <div class="baris">
+                <div class="teks">
+                    <h3>Kelas Premium</h3>
+                    <p>Kamar 4x4 m, AC, kamar mandi dalam, kasur dan lemari.</p>
+                    <p class="harga">Rp 1.800.000 / bulan</p>
+                </div>
+                <div class="gambar">
+                    <img src="bumikost2.jpg" alt="Kamar Premium">Kamar Premium</div>
+    
+            </div>
+
+            <div class="baris balik">
+                <div class="teks">
+                    <h3>Kelas Menengah</h3>
+                    <p>Kamar 3x4 m, kipas angin, kamar mandi dalam, kasur dan lemari.</p>
+                    <p class="harga">Rp 1.200.000 / bulan</p>
+                </div>
+                <div class="gambar">
+                    <img src="bumikost4.jpg" alt="Kamar Menengah">Kamar Menengah</div>
+            </div>
+
+            <div class="baris">
+                <div class="teks">
+                    <h3>Kelas Standar</h3>
+                    <p>Kamar 3x3 m, kipas angin, kamar mandi luar, kasur dan lemari.</p>
+                    <p class="harga">Rp 800.000 / bulan</p>
+                </div>
+                <div class="gambar">Kamar Standar</div>
+            </div>
+        </section>
+
+        <!-- 7. ABOUT -->
+        <section id="about">
+            <h2>About</h2>
+            <!-- Kolom Gambar -->
+            <div class="slider">
+                <span class="panah">&#10094;</span>
+                <img src="bumikost5.jpg" alt="Bumi Kost">
+                <span class="panah">&#10095;</span>
+            </div>
+            <h3>Penjelasan kos</h3>
+
+            <p>Bumi Kost -  Cikarang berdiri sejak 2015 dan memiliki 20 kamar. Lokasinya 25 menit dari kampus, dekat minimarket dan tempat makan. Lingkungan tenang, Aman CCTV dan dijaga Security 24 jam.</p>
+
+            <h3>Peraturan dan tata tertib</h3>
+            
+            <ol>
+                <li>Bayar sewa paling lambat tanggal 5 setiap awal bulan.</li>
+                <li>Tamu lawan jenis tidak boleh masuk kamar.</li>
+                <li>Jam malam pukul 22.00, kunci gerbang dibawa penghuni.</li>
+                <li>Jaga kebersihan kamar dan area bersama.</li>
+            </ol>
+        </section>
+
+        <!-- 8. CONTACT -->
+        <section id="contact">
+            <h2>Contact Pemesanan</h2>
+            <div class="kartu-kontak">
+                <img src="foto.jpg" alt="Foto pemilik kos" class="foto-pemilik">
+                <dl>
+                    <dt>Nama</dt>   <dd>Fakhri Afrian</dd>
+                    <dt>No. Telp</dt><dd>0812-3456-7890</dd>
+                    <dt>Email</dt>  <dd>fakhri789123@gmail.com</dd>
+                    <dt>Alamat</dt> <dd>Perumahan Taman Sentosa No.10A Blok I-2, Pasirsari, Cikarang Utara / Cikarang Selatan, Kabupaten Bekasi, Jawa Barat 17530, Indonesia.</dd>
+                </dl>
+            </div>
+            <a href="https://wa.me/6281234567890" class="tombol">Contact Person</a>
+            <small>Klik untuk selengkapnya</small>
+        </section>
+
+        <!-- 6. PEMESANAN / BOOKING -->
+        <section id="booking">
+            <h2>Pesan Kamar</h2>
+            <form action="#pembayaran" class="form">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" placeholder="Nama lengkap">
+
+                <label for="hp">No. HP</label>
+                <input type="tel" id="hp" placeholder="08xxxxxxxxxx">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="nama@email.com">
+
+                <label for="alamat">Alamat</label>
+                <textarea id="alamat" rows="4" placeholder="Alamat asal"></textarea>
+
+                <label for="tgl">Tanggal masuk</label>
+                <input type="date" id="tgl">
+
+                <label for="jenis">Jenis kamar</label>
+                <select id="jenis">
+                    <option>Premium</option>
+                    <option>Menengah</option>
+                    <option>Standar</option>
+                </select>
+
+                <label for="metode">Metode pembayaran</label>
+                <select id="metode">
+                    <option>Transfer bank</option>
+                    <option>E-wallet</option>
+                    <option>Tunai</option>
+                </select>
+
+                <button type="submit" class="tombol">Pesan</button>
+            </form>
+        </section>
+
+        <!-- 5. PEMBAYARAN -->
+        <section id="pembayaran">
+            <h2>Pembayaran</h2>
+            <form class="form">
+                <label for="p-jenis">Jenis kamar</label>
+                <input type="text" id="p-jenis" value="Premium">
+
+                <label for="p-metode">Metode pembayaran</label>
+                <input type="text" id="p-metode" value="Transfer bank">
+
+                <label for="p-nama">Atas nama</label>
+                <input type="text" id="p-nama" placeholder="Nama pemesan">
+
+                <button type="button" class="tombol">Bayar sekarang</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 2. REGISTER (POP UP) -->
+    <div class="popup" id="register">
+        <div class="kotak-popup">
+            <a href="#home" class="tutup" aria-label="Tutup">&times;</a>
+            <h2>Register</h2>
+            <form class="form">
+                <label for="r-email">Email</label>
+                <input type="email" id="r-email">
+                <label for="r-user">Username</label>
+                <input type="text" id="r-user">
+                <label for="r-pass">Password</label>
+                <input type="password" id="r-pass">
+                <button type="button" class="tombol">Confirm</button>
+            </form>
+            <p class="catatan">Jika sudah punya akun langsung <a href="#login">login</a></p>
+        </div>
+    </div>
+
+    <!-- 3. LOGIN (POP UP) -->
+    <div class="popup" id="login">
+        <div class="kotak-popup">
+            <a href="#home" class="tutup" aria-label="Tutup">&times;</a>
+            <h2>Login</h2>
+            <form class="form">
+                <label for="l-user">Username</label>
+                <input type="text" id="l-user">
+                <label for="l-pass">Password</label>
+                <input type="password" id="l-pass">
+                <button type="button" class="tombol">Confirm</button>
+            </form>
+            <p class="catatan">Belum punya akun? <a href="#register">Register</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Kos Nusantara &ndash; Tugas Pemrograman Web &ndash; Fakhri Afrian (312410074) &ndash; I252A</p>
+    </footer>
+
+</body>
+</html>
